@@ -18,3 +18,4 @@ cherry-pick-branch3
 cherry-pick-branch4
 pull-req-test1
 pull-req-test-squash1
+pull-req-test-squash2
