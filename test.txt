@@ -22,4 +22,3 @@ pull-req-test-squash2
 pull-req-test-squash3
 pull-req-test2
 pull-req-test3
-
