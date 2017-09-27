@@ -1,0 +1,48 @@
+//-------------------------------------------------------------------------------------
+[aws cerevo-dev]
+	アクセスキー：AKIAJ7RM3PWMGQ7S5RWA
+	シークレット：28XntLlWiBLlI8w2b1gN4gC2xKQLMvcSQ4y8ONUd
+	
+
+//-------------------------------------------------------------------------------------
+[misc]
+	ln -s /home/greenwell /var/lib/share
+	
+	
+	
+	
+
+
+//-------------------------------------------------------------------------------------
+[github]
+	ID:nmayama
+	mayama@cerevo.com
+
+//-------------------------------------------------------------------------------------
+[Alexa(AVS)]
+
+- AVSのコンソールにて
+Alexa Voice Service Sample Edowau App Security Profile Description
+Device Type ID :edowau_eleven
+Display Name :test_edowau
+Security Profile ID :amzn1.application.a153a33ed7a94c0b9600eb01a02df11b
+Client ID:amzn1.application-oa2-client.ffd8182e5f6d43cfb09bec1f811cfd66
+Client Secret:1f47031be6c950c054e2776aed2f9b66d371c2cd450309fb84c0cb6b1e273a51
+
+- アプリ&サービス > Amazonでログイン
+OAuth2 Credentials	Manage
+Alexa Voice Service Sample Edowau App Security Profile	
+Client ID:amzn1.application-oa2-client.ffd8182e5f6d43cfb09bec1f811cfd66
+Client Secret:1f47031be6c950c054e2776aed2f9b66d371c2cd450309fb84c0cb6b1e273a51
+(AVSのSecurity Profile設定と同じものになる)
+
+- 自己署名証明書の生成
+Product ID:edowau_eleven
+Serial:123456
+password:空白
+
+
+//-------------------------------------------------------------------------------------
+3-14-9-4F Yushima, Bunkyo-ku, Tokyo, 113-0034, Japan
+
+
