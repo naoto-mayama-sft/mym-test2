@@ -1,0 +1,65 @@
+#-----------------------------------------------------------------------------------------------
+# [TJ1]
+#-----------------------------------------------------------------------------------------------
+TJ1::ビルド環境
+	(https://naoto_mayama@bitbucket.org/cerevo/tj1_j_firmware.git)
+	(C:\work\git\tj1_j_firmware)
+	cmder::alias cdj
+	make es2all
+
+TJ1::ツール
+	(https://bitbucket.org/cerevo/tj1_windows_tool4debug)
+	C:\work\git\tj1_tool_windows_test\WindowsFormsAppTJ1Test\WindowsFormsAppTJ1Test.sln
+
+#-----------------------------------------------------------------------------------------------
+# [AVS for LR1,DL1]
+#-----------------------------------------------------------------------------------------------
+LR1/DL1::avs-sdk(ubuntu16)
+	(https://bitbucket.org/cerevo/dl1_alexa_avs_sdk_test)
+	cd sensor_BUILD
+	make
+	(sourceはgit/alexa-sdk)
+	
+	実行
+	alias::ax sensoryなし
+	alias::axs sensoryあり
+	alias::axs9 sensoryあり(loglevel=DEBUG9)
+	
+	sensoryエンジン確認
+		cd /home/greenwell/git/DL1_alexa_avs_sdk_test/sensory
+		./make_snsr.sh
+
+DL1::ホスト
+	teraterm lumigent309.local /auth=password /user=linaro /passwd=linaro
+
+#-----------------------------------------------------------------------------------------------
+# [ASK for LR1]
+#-----------------------------------------------------------------------------------------------
+LR1::alexa-skill
+	(https://naoto_mayama@bitbucket.org/cerevo/lr1_alexa_skill.git)
+	alias lr='cd /home/greenwell/git/lr1_alexa_skill/lambda'
+	./deploy.sh
+
+
+#-----------------------------------------------------------------------------------------------
+# [LR1]
+#-----------------------------------------------------------------------------------------------
+
+LR1::クロスコンパイル
+	(https://naoto_mayama@bitbucket.org/cerevo/lr1_provisioning.git)
+	cd git/lr1_provisioning
+	appは未構築
+
+
+#-----------------------------------------------------------------------------------------------
+# [ホスト環境群]
+#-----------------------------------------------------------------------------------------------
+//(windows)
+
+C:\work\git : gitリポジトリ
+
+D:\ : (picoDrive) 基本的なデータ関係はUSBメモリへ
+
+//(ubuntu16 on virtualBox)
+バックアップをとろう！
+
