@@ -13,3 +13,4 @@ merge
 aeta
 test
 atwghaewhawe
+C:\work\github\naoto-mayama-sft\mym-test2
